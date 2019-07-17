@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta name="google-site-verification" content="gxg14u9TMvNpjfa1mkNz2AojDo4LwK0YnJCQEtAnA80" />
-    
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/oifiglhgamignicpkfpfgldlnhckdjhc">
     <title> Chrome Browser Web Store Extensions </title>
 
 </head>
@@ -9,5 +9,12 @@
 
 <H1> Chinese Video box Tencent Assistant (追剧助手) </H1>
 
+ <button onclick="chrome.webstore.install()" id="install-button">Add to Chrome</button>
+<script>
+if (document.getElementById('extension-is-installed')) {
+  document.getElementById('install-button').style.display = 'none';
+}
+</script>
+    
 </body>
 </html>
