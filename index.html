@@ -7,13 +7,7 @@
     
 
     <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/oifiglhgamignicpkfpfgldlnhckdjhc">
-    <link rel="canonical" href="https://robwu.nl/s/chrome.webstore.install-demo.html">
-<style>
-    body {
-        margin: 3em auto;
-        width: 600px;
-    }
-</style>
+  
 
 </head>
   <body>
@@ -24,25 +18,6 @@
 </p>
     
    
-<script>
-function onInstalled() {
-    button.disabled = true;
-    button.textContent = 'The extension has been installed.';
-    // In reality, you would show some nice features on the page.
-}
-var button = document.getElementById('install-extension');
-if (document.documentElement.hasAttribute('attribute-set-by-extension')) {
-    onInstalled();
-} else {
-    button.onclick = function() {
-        chrome.webstore.install(undefined, function() {
-            onInstalled();
-        }, function(error, errorCode) {
-            alert('chrome.webstore.install failed. Error:\n' + error);
-        });
-    };
-}
-</script> 
     
 <H1> Chinese Video box Tencent Assistant (追剧助手) </H1>
 
